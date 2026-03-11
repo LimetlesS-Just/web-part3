@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Terstruktur 3</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f0f0f0;">
+
+    <svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="f1" x="0" y="0" width="200%" height="200%">
+                <feDropShadow dx="5" dy="5" stdDeviation="3" flood-opacity="0.5"/>
+            </filter>
+
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="20%" stop-color="#00008B" />
+                <stop offset="100%" stop-color="#87CEEB" />
+            </linearGradient>
+        </defs>
+
+        <rect x="25" y="25" width="225" height="250" fill="#e0e0e0" rx="10" />
+        <rect x="62" y="100" width="150" height="100" 
+              fill="#280137" fill-opacity="0.9" 
+              stroke="#ffad00" stroke-width="5" 
+              stroke-dasharray="10,5" />
+
+        <rect x="285" y="25" width="225" height="250" fill="#e0e0e0" rx="10" />
+        <circle cx="397" cy="150" r="70" fill="url(#grad1)" />
+        <text x="397" y="165" font-size="35" text-anchor="middle" fill="white" font-family="Verdana">SVG</text>
+
+        <rect x="545" y="25" width="225" height="250" fill="#e0e0e0" rx="10" />
+        <rect x="595" y="87" width="125" height="125" 
+              fill="green" stroke="black" stroke-width="2"
+              filter="url(#f1)" />
+    </svg>
+
+</body>
+</html>
